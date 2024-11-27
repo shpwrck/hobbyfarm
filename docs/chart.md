@@ -2,7 +2,8 @@
 
 Install with Helm (v3, of course)!
 
-    helm install hf hobbyfarm --repo https://hobbyfarm.github.io/hobbyfarm --namespace <namespace>
+    helm repo add hobbyfarm https://hobbyfarm.github.io/hobbyfarm
+    helm install hf hobbyfarm --repo https://hobbyfarm.github.io/hobbyfarm --create-namespace --namespace hobbyfarm
 
 ## VM Provider Auth
 
